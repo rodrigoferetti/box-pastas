@@ -1,0 +1,151 @@
+:root {
+    --verdeoscuro: #287980;
+    --blanco: #FFFFFF; 
+    --iconos: #F0A04B;
+    
+    --fuenteHeading: 'Port Lligat Slab', serif;
+    --fuenteParrafos: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Header */
+
+header {
+    background-image: url(../assets/img/imagenprincipal.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80rem;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    top: 1.5rem;
+    left: 5rem;
+}
+
+.navegador-enlace {
+    color: var(--blanco);
+    font-family: var(--fuenteParrafos);
+    font-size: 3.5rem;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 5rem;
+}
+
+.logo-box {
+    display: flex;
+    position: absolute;
+    top: 10rem;
+    left: 60rem;
+}
+
+.iconos-pastas {
+    display: flex;
+    position:relative;
+    top: 65rem;      
+    text-align: center;
+    font-size: medium;
+    font-family: var(--fuenteParrafos);
+}
+
+.ravioles-icon,
+.sorrentinos-icon,
+.spaghettis-icon {
+    border-radius: 50%;
+    padding: 3rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    background-color: var(--iconos);
+    margin-left: 23.5rem;
+}
+
+
+/* Main Index*/
+
+
+.contenedor-main {
+    display: block;
+    position: relative;
+    top: 20rem;
+    margin-left: 5rem;
+}
+
+.segunda-imagen {
+    display: flex;
+    width: 93.6rem;
+    height: 44.6rem;
+    margin-bottom: 35rem;
+}
+
+.titulo-imagen {
+    font-family: var(--fuenteHeading);
+    font-size: 6.9rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+.sector-top {
+    margin-bottom: 10rem;
+}
+
+/* Aside */
+
+.sector-side {
+    display: flex;
+    position: absolute;
+    top: 110rem;
+    right: 5rem;
+    bottom: 15rem;
+    width: 30rem;
+    height: 109rem;    
+}
+
+/* footer */
+
+footer {
+    background-image: url(../assets/img/imagenpie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40rem;
+    
+}
+
+.iconos-redes  {
+    display: flex;
+    position: relative;
+    top: 12.5rem;
+}
+
+.instagram-icon{
+    margin-left: 40rem;
+}
+.facebook-icon {
+    margin-left: 24.5rem;
+    margin-right: 25rem;
+}
+
+
+
+/* Haz tu compra */
+
+form {
+    margin-top: 15rem;
+}
+
+/* le coloque un margen al formulario porque las esferas no dejaban accionar sobre el */
