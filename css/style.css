@@ -33,9 +33,9 @@ header {
 
 .navbar {
     display: flex;
-    position: relative;
-    top: 1.5rem;
-    left: 5rem;
+    justify-content: start;
+    gap: 3rem;
+    margin-left: 1rem;
 }
 
 .navegador-enlace {
@@ -44,23 +44,22 @@ header {
     font-size: 3.5rem;
     list-style: none;
     text-decoration: none;
-    margin-left: 5rem;
 }
 
 .logo-box {
     display: flex;
-    position: absolute;
-    top: 10rem;
-    left: 60rem;
+    justify-content: center;
+    margin-top: 9rem;
 }
 
 .iconos-pastas {
     display: flex;
-    position:relative;
-    top: 65rem;      
+    justify-content: center;
+    margin-top: 9rem;      
     text-align: center;
     font-size: medium;
     font-family: var(--fuenteParrafos);
+    gap: 15rem;
 }
 
 .ravioles-icon,
@@ -71,49 +70,66 @@ header {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
     background-color: var(--iconos);
-    margin-left: 23.5rem;
+
 }
+
 
 
 /* Main Index*/
 
-
 .contenedor-main {
-    display: block;
-    position: relative;
-    top: 20rem;
-    margin-left: 5rem;
+    display: grid;
+    grid-template: repeat(4,auto) / repeat(4,25%);
+    grid-template-areas: 
+    ". . . item3"
+    ". . . item3"
+    ". . . item3"
+    ". . . item3"
+    ;
+    row-gap: 5rem;
+    column-gap: 5px;
+    margin-top: 17rem;
+    margin-right: 2px;
+    margin-left: 1rem;
+}
+
+.sector-principal {
+    width: 90rem;
+    margin-left: 3rem;
+}
+
+.primer-imagen {
+    width: 85rem;
+    margin-bottom: 5rem;
 }
 
 .segunda-imagen {
     display: flex;
-    width: 93.6rem;
-    height: 44.6rem;
-    margin-bottom: 35rem;
+    width: 60rem;
+    height: 40rem;
+}
+
+.side-main {
+    grid-area: item3;
+    width: 80%;
+    height: 90%;
+    margin-top: 4rem;
+
 }
 
 .titulo-imagen {
+    
     font-family: var(--fuenteHeading);
     font-size: 6.9rem;
     font-weight: 400;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-.sector-top {
-    margin-bottom: 10rem;
-}
 
-/* Aside */
 
-.sector-side {
-    display: flex;
-    position: absolute;
-    top: 110rem;
-    right: 5rem;
-    bottom: 15rem;
-    width: 30rem;
-    height: 109rem;    
-}
+
+
+
 
 /* footer */
 
@@ -129,16 +145,12 @@ footer {
 .iconos-redes  {
     display: flex;
     position: relative;
+    justify-content: center;
+    gap: 17rem;
     top: 12.5rem;
 }
 
-.instagram-icon{
-    margin-left: 40rem;
-}
-.facebook-icon {
-    margin-left: 24.5rem;
-    margin-right: 25rem;
-}
+
 
 
 
