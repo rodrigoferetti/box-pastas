@@ -62,7 +62,7 @@ header {
         grid-column-end: 2;
         justify-content: center;
         align-items: end;
-        margin-top: 0rem;
+        margin-top: 50rem;
     }
     .ravioles-icon,
     .sorrentinos-icon,
@@ -74,26 +74,15 @@ header {
         background-color: var(--iconos);
     }
 
-    .ravioles-icon {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        align-items: center;
-    }
-    .ravioles-icon {
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
-
-    }
 }
 
 /* Main Index */
 
 .titulo-imagen {
     font-family: var(--fuenteHeading);
-    font-size: 4rem;
+    font-size: 7rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .primer-imagen {
     width: 100%;
@@ -117,7 +106,8 @@ header {
 
 @media (min-width: 768px) {
    .titulo-imagen {
-    font-size: 10rem;
+    font-size: 7rem;
+    margin-top: 15rem;
    }
    .segunda-imagen {
     display: flex;
@@ -166,21 +156,22 @@ header {
        }
     
     .side-main {
-        display: flex;
+        display: grid;
         visibility: visible;
         grid-area: item3;
-        width: 80%;
-        height: 94%;
-        margin-top: 6rem;
-    
+        width: 90%;
+        height: 115rem;
+        margin-top: 8.5rem;
+        
     }
     
     .titulo-imagen {
         
         font-family: var(--fuenteHeading);
-        font-size: 6.9rem;
+        font-size: 8rem;
         font-weight: 400;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
     }
 }
 
@@ -228,7 +219,7 @@ header {
         margin-left: 3rem;
     }
     .side-quienes {
-        display: flex;
+        display: grid;
         visibility: visible;
         grid-area: item2;
         width: 80%;
