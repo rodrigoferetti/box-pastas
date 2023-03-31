@@ -5,45 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Pastas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="container-fluid">
         <div class="contenedor-header">        
-            <nav>
-                <ul class="navbar">
-                    <il><a class="navegador-enlace" href="../pages/quiensomos.html">Quien Somos</a></il>
-                    <il><a class="navegador-enlace" href="../pages/pastas.html">Pastas</a></il>
-                    <il><a class="navegador-enlace" href="../pages/salsas.html">Salsas</a></il>
-                    <il><a class="navegador-enlace" href="../pages/haztucompra.html">Haz tu Compra</a></il>
-                </ul>
-            </nav>
-
-            <div class="logo-box">
-                <a href="../index.html" >
-                    <img src="../assets/img/logo.jpg" alt="logo de la empresa">
-                </a>
-            </div> 
-        
-            <div class="iconos-pastas">
-                <div class="ravioles-icon">
-                    <img src="../assets/img/raviolesicon.png" alt="Dos ravioles, uno al lado de otro">
-                    <p>Ravioles</p>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo.jpg" alt="Logo" width="110" height="110" class="d-inline-block align-text-top">
+                      </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active nav-enlace" aria-current="page" href="../pages/quiensomos.html">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active nav-enlace" href="../pages/pastas.html">Pastas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active nav-enlace" href="../pages/salsas.html">Salsas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active nav-enlace" href="../pages/haztucompra.html" >Haz Tu Compra</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="sorrentinos-icon">
-                    <img src="../assets/img/sorrentinosicon.png" alt="Dos sorrentinos colocados diagonalmente">
-                    <p>Sorrentinos</p>
-                </div>
-                <div class="spaghettis-icon">
-                    <img src="../assets/img/spaghettiicon.png" alt="plato de spaghettis">
-                    <p>Spaghettis</p>
-                </div>              
-            </div> 
+              </nav>
         </div> 
     </header>
+
+    
 
     <main>
         <form>
@@ -90,18 +90,19 @@
         </form>
     </main>
 
-    <footer>
-        <div class="iconos-redes">
-            <a class="instagram-icon" href="#">
+    <footer class="container-fluid">
+        <div class="row">
+            <a class="col-sm-12 row-md-6 col-md-4 d-flex justify-content-evenly ig-icon" href="#">
             <img src="../assets/img/icon-Instagram.png" alt="logo twitter">
             </a>
-            <a class="facebook-icon" href="#">
+            <a class="col-sm-12 col-md-3 d-flex justify-content-evenly  fb-icon" href="#">
             <img src="../assets/img/icon-Facebook.png" alt="logo twitter">
             </a>
-            <a class="twitter-icon"  href="#">
+            <a class="col-sm-12 col-md-4 d-flex justify-content-evenly tw-icon"  href="#">
             <img src="../assets/img/icon-Twitter.png" alt="logo twitter">
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
