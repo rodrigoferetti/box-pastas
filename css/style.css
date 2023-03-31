@@ -239,6 +239,19 @@ header {
     }
     }
 
+/* Pastas index */
+
+.imagenes-normal {
+    display: flex;
+    height: 40rem;
+    width: 20rem;
+}
+
+.ravioles-normal,
+.sorrentinos-normal,
+.spaghettis-normal {
+    border-radius: 50%;
+}
 
 /* footer */
 
@@ -272,6 +285,10 @@ footer {
     }
     
 }
+
+
+
+
 
 
 
