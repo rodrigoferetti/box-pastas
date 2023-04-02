@@ -237,20 +237,170 @@ header {
     }
     }
 
-/* Pastas index */
+/* Pastas main */
 
-.imagenes-normal {
+.titulo-pastas {
+    font-family: var(--fuenteHeading);
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.subtitulos-pastas {
+    font-family: var(--fuenteHeading);
+    font-size: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.imagenes-masa {
     display: flex;
-    height: 40rem;
-    width: 20rem;
+    justify-content: center;
+    margin-top: 3rem;
+
 }
 
-.ravioles-normal,
-.sorrentinos-normal,
-.spaghettis-normal {
+.imagen-pasta {
     border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    
+}
+
+
+.imagen-gusto {
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+.gustos-posicion {
+    display: flex;
+    justify-content: center;
+}
+.side-izq,
+.side-der {
+    display: none;
 
 }
+
+@media (min-width: 1300px) {
+   .contenedor-desktop {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 1fr;
+   }
+
+   .contenedor-pastas {
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
+    
+
+   .side-izq {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   }
+   .tenedor-izq {
+    display: flex;
+    height: 100%;
+    width: 100%;
+   }
+   .side-der{
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+}
+   .tenedor-der {
+    display: flex;
+    height: 100%;
+    width: 100%;
+   }
+}
+
+/* Salsas Main */
+
+.titulo-salsas {
+    font-family: var(--fuenteHeading);
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 15rem;
+}
+.imagenes-salsas {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.img-salsa {
+    width: 100%;
+    height: 60rem;
+}
+
+/* Haz tu compra */
+
+form {
+    width: 70%;
+    height: auto;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color:#ccc;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
+
+form label {
+    width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+    display: block;
+}
+
+form input[type="text"] {
+    width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+}
+
+form input[type="number"] {
+    width:25%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+}
+
+form input[type="tel"] {
+    width:25%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+}
+
 
 /* footer */
 
@@ -292,10 +442,6 @@ footer {
 
 
 
-/* Haz tu compra */
 
-form {
-    margin-top: 15rem;
-}
 
 /* le coloque un margen al formulario porque las esferas no dejaban accionar sobre el */
