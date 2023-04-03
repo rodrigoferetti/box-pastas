@@ -80,7 +80,7 @@ header {
 
 .titulo-imagen {
     font-family: var(--fuenteHeading);
-    font-size: 7rem;
+    font-size: 5rem;
     text-align: center;
     margin-top: 4rem;
 }
@@ -183,11 +183,11 @@ header {
 }
 .titulo-quienes {
     font-family: var(--fuenteHeading);
-    font-size: 8rem;
+    font-size: 5rem;
 }
 .parrafo-quienes {
     font-family: var(--fuenteParrafos);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -200,6 +200,13 @@ header {
    .texto-quienes {
     margin-top: 14rem;
    }
+   .titulo-quienes {
+    font-size: 7rem;
+   }
+   .parrafo-quienes {
+    font-size: 3rem;
+}
+
 }
 
 
