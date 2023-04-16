@@ -1,0 +1,17 @@
+.contenedor-salsas {
+    h1{
+        font-family: $fuenteHeading;
+        font-size: 7rem;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .imagenes-salsas {
+        img {
+            width: 100%;        
+        }
+        :last-child{
+            margin-bottom: 3rem;
+        }
+    }
+}

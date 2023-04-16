@@ -1,0 +1,13 @@
+footer {
+    background-image: url(../assets/img/imagenpie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40rem;
+    
+    .row {
+        img {
+            margin-top: 3rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.titulo-imagen {
+    font-family: $fuenteHeading;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.primer-imagen {
+    width: 100%;
+}
+.segunda-imagen {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    img {
+        width: 100%;
+        height: 60rem;
+    }
+}
+.side-main {
+    display: none;
+    visibility:hidden;
+}

@@ -1,0 +1,16 @@
+.texto-quienes {
+    text-align: center;
+    margin: 3rem;
+    h1 {
+        font-family: var(--fuenteHeading);
+        font-size: 5rem;
+    }
+    p {
+        font-family: var(--fuenteParrafos);
+        font-size: 2rem;
+    }
+}
+.side-quienes {
+    display: none;
+    visibility:hidden;
+}

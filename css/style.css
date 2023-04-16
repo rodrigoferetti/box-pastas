@@ -1,455 +1,157 @@
-:root {
-    --verdeoscuro: #287980;
-    --blanco: #FFFFFF; 
-    --iconos: #F0A04B;
-    
-    --fuenteHeading: 'Port Lligat Slab', serif;
-    --fuenteParrafos: 'Poppins', sans-serif;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-}
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
-/* Header */
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 header {
-    background-image: url(../assets/img/imagenprincipal.png); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 60rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.navbar {
+  background-image: url(../assets/img/imagenprincipal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 60rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+  header .navbar {
     position: fixed;
     top: 10;
-    width: 100%;
-}
-
-.nav-enlace {
-    font-size: 3rem;
-    font-family: var(--fuenteParrafos);
-    margin-right: 3rem;
-}
-
-.iconos-pastas {
+    width: 100%; }
+    header .navbar a {
+      font-size: 2rem;
+      font-family: "Poppins", sans-serif;
+      margin-right: 3rem; }
+  header .iconos-pastas {
     display: none;
-    visibility: hidden;
-}
-
-@media (min-width: 768px) {
-    .iconos-pastas {
-        display: flex;
-        visibility: visible;
-        text-align: center;
-        font-size: medium;
-        font-family: var(--fuenteParrafos);
-        gap: 5rem;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        justify-content: center;
-        align-items: end;
-        margin-top: 50rem;
-    }
-    .ravioles-icon,
-    .sorrentinos-icon,
-    .spaghettis-icon {  
-        border-radius: 50%;
-        padding: 3rem;
-        padding-left: 4.5rem;
-        padding-right: 4.5rem;
-        background-color: var(--iconos);
-    }
-
-}
-
-/* Main Index */
+    visibility: hidden; }
 
 .titulo-imagen {
-    font-family: var(--fuenteHeading);
-    font-size: 5rem;
-    text-align: center;
-    margin-top: 4rem;
-}
+  font-family: "Port Lligat Slab", serif;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 4rem; }
+
 .primer-imagen {
-    width: 100%;
-}
+  width: 100%; }
 
 .segunda-imagen {
-    display: block;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-
-.img_3 {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 4rem; }
+  .segunda-imagen img {
     width: 100%;
-    height: 60rem;
-}
+    height: 60rem; }
 
 .side-main {
-    display: none;
-    visibility:hidden;
-}
-
-@media (min-width: 768px) {
-   .titulo-imagen {
-    font-size: 7rem;
-    margin-top: 15rem;
-   }
-   .segunda-imagen {
-    display: flex;
-   }
-   .img_3 {
-    width: 33.3%;
-    height: 40rem;
-   }
-}
-
-@media (min-width: 1300px) {
-    .contenedor-main {
-        display: grid;
-        grid-template: repeat(4,auto) / repeat(4,25%);
-        grid-template-areas: 
-        ". . . item3"
-        ". . . item3"
-        ". . . item3"
-        ". . . item3"
-        ;
-        row-gap: 5rem;
-        column-gap: 2px;
-        margin-top: 17rem;
-        margin-left: 1rem;
-    }
-    
-    .sector-principal {
-        width: 90rem;
-        margin-left: 1rem;
-    }
-    
-    .primer-imagen {
-        width: 90rem;
-        margin-bottom: 5rem;
-    }
-    
-    .segunda-imagen {
-        display: flex;
-        width: 90rem;
-        height: 30rem;
-    }
-
-    .img_3 {
-        height: 45rem;
-       }
-    
-    .side-main {
-        display: grid;
-        visibility: visible;
-        grid-area: item3;
-        margin-top: 18rem;    
-    }
-    .imgside-main{
-        width: 30rem;
-        height: 96%;
-    }
-    
-    .titulo-imagen {
-        
-        font-family: var(--fuenteHeading);
-        font-size: 8rem;
-        font-weight: 400;
-        margin-top: 2rem;
-        margin-bottom: 7rem;
-    }
-}
-
-/* Main Quienes Somos */
+  display: none;
+  visibility: hidden; }
 
 .texto-quienes {
-    text-align: center;
-    margin: 3rem;
-}
-.titulo-quienes {
+  text-align: center;
+  margin: 3rem; }
+  .texto-quienes h1 {
     font-family: var(--fuenteHeading);
-    font-size: 5rem;
-}
-.parrafo-quienes {
+    font-size: 5rem; }
+  .texto-quienes p {
     font-family: var(--fuenteParrafos);
-    font-size: 2rem;
-}
-
+    font-size: 2rem; }
 
 .side-quienes {
-    display: none;
-    visibility:hidden;
-}
+  display: none;
+  visibility: hidden; }
 
-@media (min-width: 768px) {
-   .texto-quienes {
-    margin-top: 14rem;
-   }
-   .titulo-quienes {
-    font-size: 7rem;
-   }
-   .parrafo-quienes {
-    font-size: 3rem;
-}
-
-}
-
-
-@media (min-width: 1300px) {
-   .contenedor-quienes {
-        display: grid;
-        grid-template-rows: repeat(4,auto);
-        grid-template-columns:  5fr 1fr;
-        grid-template-areas: 
-        "item1 item1 item1 item1 item1  item2"
-        "item1 item1 item1 item1 item1 item2"
-        "item1 item1 item1 item1 item1 item2"
-        "item1 item1 item1 item1 item1 item2"
-        ;
-
-    }
-
-    .texto-quienes{
-        grid-area: item1;
-        text-align: center;
-        margin-top: 17rem;
-        margin-right: 3rem;
-        margin-bottom: 4rem;
-        margin-left: 3rem;
-    }
-    .side-quienes {
-        display: flex;
-        visibility: visible;
-        grid-area: item2;
-        width: 50%;
-        height: 80%;
-        margin-top: 20rem;
-        margin-right: 5rem;
-        
-    }
-    }
-
-/* Pastas main */
-
-.titulo-pastas {
-    font-family: var(--fuenteHeading);
-    font-size: 10rem;
-    text-align: center;
-    margin-top: 15rem;
-}
-
-.subtitulos-pastas {
-    font-family: var(--fuenteHeading);
+.contenedor-pastas {
+  display: block; }
+  .contenedor-pastas h2 {
+    font-family: "Port Lligat Slab", serif;
     font-size: 5rem;
+    text-align: center;
+    margin-top: 5rem; }
+  .contenedor-pastas h3 {
+    font-family: "Port Lligat Slab", serif;
+    font-size: 3rem;
     margin-top: 2rem;
-    text-align: center;
-}
-
-.imagenes-masa {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-
-}
-
-.imagen-pasta {
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    
-}
-
-
-.imagen-gusto {
-    border-radius: 50%;
-    width: 30rem;
-    height: 30rem;
-    margin-bottom: 2rem;
-}
-.gustos-posicion {
-    display: flex;
-    justify-content: center;
-}
-.side-izq,
-.side-der {
-    display: none;
-
-}
-
-@media (min-width: 1300px) {
-   .contenedor-desktop {
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 1fr;
-   }
-
-   .contenedor-pastas {
-    grid-column-start: 2;
-    grid-column-end: 3;
-   }
-    
-
-   .side-izq {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-   }
-   .tenedor-izq {
-    display: flex;
-    height: 100%;
-    width: 100%;
-   }
-   .side-der{
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;  
-}
-   .tenedor-der {
-    display: flex;
-    height: 100%;
-    width: 100%;
-   }
-}
-
-/* Salsas Main */
-
-.titulo-salsas {
-    font-family: var(--fuenteHeading);
-    font-size: 10rem;
-    text-align: center;
-    margin-top: 15rem;
-}
-.imagenes-salsas {
+    text-align: center; }
+  .contenedor-pastas .imagenes-masa img {
     display: block;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-
-.img-salsa {
+    justify-content: center;
     width: 100%;
-    height: 60rem;
-}
+    height: 25rem; }
+  .contenedor-pastas .sector-gustos img {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2rem; }
 
-/* Haz tu compra */
+.side-pastas img {
+  display: none; }
+
+.contenedor-salsas h1 {
+  font-family: "Port Lligat Slab", serif;
+  font-size: 7rem;
+  text-align: center;
+  margin-top: 5rem; }
+
+.contenedor-salsas .imagenes-salsas img {
+  width: 100%; }
+
+.contenedor-salsas .imagenes-salsas :last-child {
+  margin-bottom: 3rem; }
 
 form {
-    width: 65%;
-    height: auto;
-    padding:16px;
-    border-radius:10px;
-    margin:auto;
-    background-color:#ccc;
-    margin-top: 15rem;
-    margin-bottom: 10rem;
-}
+  width: 80%;
+  height: auto;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 5%;
+  background-color: #ccc; }
 
-form label {
-    width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-}
+fieldset label {
+  display: block;
+  font-weight: bold; }
+  fieldset label select {
+    width: 80%; }
 
-form label{
-	width: 20rem;
-	font-weight:bold;
-    display: block;
-}
+fieldset input[type="text"] {
+  width: 100%;
+  height: 10rem;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block; }
 
-form input[type="text"] {
-    width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-}
+fieldset input[type="number"],
+fieldset input[type="tel"] {
+  width: 80%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block; }
 
-form input[type="number"],
-form input[type="tel"] {
-    width:25%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-}
-
-form input[type="submit"] {
-    width:20%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-    border-radius:5px;
-    display:block;
-    background-color: #287980;
-}
-
-
-/* footer */
-
-
-.ig-icon {
-    margin-top: 3rem;
-}
-
-.ig-icon,
-.fb-icon,
-.tw-icon {
-    margin-top: 3rem;
-}
+fieldset input[type="submit"] {
+  width: 90%;
+  justify-content: center;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  background-color: #287980; }
 
 footer {
-    background-image: url(../assets/img/imagenpie.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 40rem;
-    
-}
-
-
-@media (min-width: 768px) {
-    .ig-icon,
-    .fb-icon,
-    .tw-icon {
-        position: relative;
-        margin-top: 12rem;
-    }
-    
-}
-
-
-
-
-
-
-
-
-
-
-/* le coloque un margen al formulario porque las esferas no dejaban accionar sobre el */
+  background-image: url(../assets/img/imagenpie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40rem; }
+  footer .row img {
+    margin-top: 3rem; }
