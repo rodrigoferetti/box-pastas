@@ -1,0 +1,103 @@
+@media (min-width: 768px) {
+    header{
+        .iconos-pastas {
+            display: flex;
+            visibility: visible;
+            text-align: center;
+            font-size: medium;
+            font-family: var(--fuenteParrafos);
+            gap: 5rem;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            justify-content: center;
+            align-items: end;
+            margin-top: 50rem;
+            div{
+            border-radius: 50%;
+            padding: 3rem;
+            padding-left: 4.5rem;
+            padding-right: 4.5rem;
+            background-color: $iconos;
+            }
+        }
+    }
+
+    .contenedor-main {
+        h2 {
+            font-size: 7rem;
+            margin-top: 15rem;
+           }
+        .segunda-imagen {
+            display: flex;
+            img {
+                width: 33.3%;
+                height: 40rem;
+            }
+        }
+    }
+
+    .contenedor-quienes {
+        div {
+            margin-top: 14rem;
+            h1{
+                font-size: 7rem;
+            }
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .contenedor-pastas{
+        margin-top: 15rem;
+        justify-content: center;
+        .imagenes-masa {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            .imagen-pasta{
+                @include pasta(50%, 30rem, 30rem);
+            }        
+        }
+        .sector-gustos{
+            .gustos-posicion {
+                display: flex;
+                justify-content: center;
+                margin-top: 3rem;
+                img {
+                    border-radius: 50%;
+                    width: 30rem;
+                    height: 30rem;
+                }
+                }
+            }
+        }
+   
+
+    .contenedor-compra{
+        form {
+            margin-top: 15rem;
+            fieldset {
+                select{
+                    width: 40%;
+                }
+                input[type="number"],
+                input[type="tel"] {
+                width:40%;
+                }
+                input[type="submit"] {
+                    width:20%;
+                }
+            }
+        }
+    }
+
+    footer{
+        .row {
+            img{
+                margin-top: 15rem;
+            }
+        }
+    }
+}
+
