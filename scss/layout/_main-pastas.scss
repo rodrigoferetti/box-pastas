@@ -24,8 +24,8 @@
     }
 }
 }
-.side-pastas {
-    img {
+.side-izq,
+.side-der {
         display: none;
-    }
+        visibility: hidden;
 }

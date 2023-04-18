@@ -49,7 +49,17 @@ header {
       padding: 3rem;
       padding-left: 4.5rem;
       padding-right: 4.5rem;
-      background-color: #F0A04B; }
+      background-color: #F0A04B;
+      animation-name: cambio;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 5s;
+      animation-delay: 0s; }
+  @keyframes cambio {
+    0% {
+      border-radius: 0%; }
+    25% {
+      border-radius: 20%; } }
   .contenedor-main h2 {
     font-size: 7rem;
     margin-top: 15rem; }
@@ -92,8 +102,10 @@ header {
       width: 40%; }
     .contenedor-compra form fieldset input[type="submit"] {
       width: 20%; }
-  footer .row img {
-    margin-top: 15rem; } }
+  footer .row .ig-icon,
+  footer .row .fb-icon,
+  footer .row .tw-icon {
+    margin-top: 10rem; } }
 
 @media (min-width: 1300px) {
   .contenedor-main {
@@ -112,6 +124,14 @@ header {
         font-weight: 400;
         margin-top: 10rem;
         margin-bottom: 2rem; }
+    .contenedor-main .primer-imagen:hover {
+      -webkit-box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75); }
+    .contenedor-main .segunda-imagen:hover {
+      -webkit-box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75); }
     .contenedor-main aside {
       display: grid;
       visibility: visible;
@@ -120,6 +140,10 @@ header {
       .contenedor-main aside img {
         width: 30rem;
         height: 85%; }
+      .contenedor-main aside img:hover {
+        -webkit-box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 9px 15px 0px rgba(0, 0, 0, 0.75); }
   .contenedor-quienes {
     display: grid;
     grid-template-rows: repeat(4, auto);
@@ -128,7 +152,7 @@ header {
     .contenedor-quienes .texto-quienes {
       grid-area: item1;
       text-align: center;
-      margin-top: 17rem;
+      margin-top: 5rem;
       margin-right: 3rem;
       margin-bottom: 4rem;
       margin-left: 3rem; }
@@ -147,29 +171,32 @@ header {
     .contenedor-desktop .contenedor-pastas {
       grid-column-start: 2;
       grid-column-end: 3; }
-    .contenedor-desktop .side-pastas {
-      display: grid; }
-      .contenedor-desktop .side-pastas .side-izq {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2; }
-        .contenedor-desktop .side-pastas .side-izq img {
-          grid-column-start: 1;
-          grid-column-end: 2;
-          display: flex;
-          height: 100%;
-          width: 100%; }
-      .contenedor-desktop .side-pastas .side-der {
-        display: grid;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2; }
-        .contenedor-desktop .side-pastas .side-der img {
-          display: flex;
-          height: 166.7%;
-          width: 100%; } }
+      .contenedor-desktop .contenedor-pastas .imagen-pasta:hover {
+        width: 30rem;
+        height: 30rem; }
+      .contenedor-desktop .contenedor-pastas .gustos-posicion img:hover {
+        width: 50rem;
+        height: 50rem; }
+    .contenedor-desktop .side-izq {
+      display: grid;
+      visibility: visible;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+      .contenedor-desktop .side-izq img {
+        width: 100%;
+        height: 100%; }
+    .contenedor-desktop .side-der {
+      display: grid;
+      visibility: visible;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+      .contenedor-desktop .side-der img {
+        width: 100%;
+        height: 100%; } }
 
 main h2 {
   font-family: "Port Lligat Slab", serif;
@@ -234,8 +261,10 @@ aside {
     height: 25rem;
     margin-bottom: 2rem; }
 
-.side-pastas img {
-  display: none; }
+.side-izq,
+.side-der {
+  display: none;
+  visibility: hidden; }
 
 main h1 {
   font-family: "Port Lligat Slab", serif;

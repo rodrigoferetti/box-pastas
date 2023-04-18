@@ -18,6 +18,20 @@
             padding-left: 4.5rem;
             padding-right: 4.5rem;
             background-color: $iconos;
+            animation-name: cambio;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            }
+            @keyframes cambio {
+                0%{
+                    border-radius: 0%;
+                }
+                25%{
+                    border-radius: 20%;
+                }
+
             }
         }
     }
@@ -57,7 +71,7 @@
             margin-top: 3rem;
             .imagen-pasta{
                 @include pasta(50%, 30rem, 30rem);
-            }        
+            } 
         }
         .sector-gustos{
             .gustos-posicion {
@@ -68,6 +82,7 @@
                     border-radius: 50%;
                     width: 30rem;
                     height: 30rem;
+                    
                 }
                 }
             }
@@ -94,8 +109,10 @@
 
     footer{
         .row {
-            img{
-                margin-top: 15rem;
+            .ig-icon, 
+            .fb-icon,
+            .tw-icon{
+                margin-top: 10rem;
             }
         }
     }
