@@ -172,11 +172,11 @@ header {
       grid-column-start: 2;
       grid-column-end: 3; }
       .contenedor-desktop .contenedor-pastas .imagen-pasta:hover {
-        width: 30rem;
-        height: 30rem; }
+        width: 25rem;
+        height: 25rem; }
       .contenedor-desktop .contenedor-pastas .gustos-posicion img:hover {
-        width: 50rem;
-        height: 50rem; }
+        width: 35rem;
+        height: 35rem; }
     .contenedor-desktop .side-izq {
       display: grid;
       visibility: visible;
